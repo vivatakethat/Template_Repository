@@ -1,0 +1,63 @@
+
+0.4.3.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <_ZL6threadPv>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 89 7d e8          	mov    %rdi,-0x18(%rbp)
+   8:	c7 45 fc 00 00 00 00 	movl   $0x0,-0x4(%rbp)
+   f:	81 7d fc 3f 42 0f 00 	cmpl   $0xf423f,-0x4(%rbp)
+  16:	7f 15                	jg     2d <_ZL6threadPv+0x2d>
+  18:	8b 05 00 00 00 00    	mov    0x0(%rip),%eax        # 1e <_ZL6threadPv+0x1e>
+  1e:	83 c0 01             	add    $0x1,%eax
+  21:	89 05 00 00 00 00    	mov    %eax,0x0(%rip)        # 27 <_ZL6threadPv+0x27>
+  27:	83 45 fc 01          	addl   $0x1,-0x4(%rbp)
+  2b:	eb e2                	jmp    f <_ZL6threadPv+0xf>
+  2d:	b8 00 00 00 00       	mov    $0x0,%eax
+  32:	5d                   	pop    %rbp
+  33:	c3                   	retq   
+
+0000000000000034 <main>:
+  34:	55                   	push   %rbp
+  35:	48 89 e5             	mov    %rsp,%rbp
+  38:	48 83 ec 20          	sub    $0x20,%rsp
+  3c:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+  43:	00 00 
+  45:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+  49:	31 c0                	xor    %eax,%eax
+  4b:	48 8d 45 e8          	lea    -0x18(%rbp),%rax
+  4f:	b9 00 00 00 00       	mov    $0x0,%ecx
+  54:	48 8d 15 a5 ff ff ff 	lea    -0x5b(%rip),%rdx        # 0 <_ZL6threadPv>
+  5b:	be 00 00 00 00       	mov    $0x0,%esi
+  60:	48 89 c7             	mov    %rax,%rdi
+  63:	e8 00 00 00 00       	callq  68 <main+0x34>
+  68:	48 8d 45 f0          	lea    -0x10(%rbp),%rax
+  6c:	b9 00 00 00 00       	mov    $0x0,%ecx
+  71:	48 8d 15 88 ff ff ff 	lea    -0x78(%rip),%rdx        # 0 <_ZL6threadPv>
+  78:	be 00 00 00 00       	mov    $0x0,%esi
+  7d:	48 89 c7             	mov    %rax,%rdi
+  80:	e8 00 00 00 00       	callq  85 <main+0x51>
+  85:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  89:	be 00 00 00 00       	mov    $0x0,%esi
+  8e:	48 89 c7             	mov    %rax,%rdi
+  91:	e8 00 00 00 00       	callq  96 <main+0x62>
+  96:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+  9a:	be 00 00 00 00       	mov    $0x0,%esi
+  9f:	48 89 c7             	mov    %rax,%rdi
+  a2:	e8 00 00 00 00       	callq  a7 <main+0x73>
+  a7:	8b 05 00 00 00 00    	mov    0x0(%rip),%eax        # ad <main+0x79>
+  ad:	89 c6                	mov    %eax,%esi
+  af:	48 8d 3d 00 00 00 00 	lea    0x0(%rip),%rdi        # b6 <main+0x82>
+  b6:	b8 00 00 00 00       	mov    $0x0,%eax
+  bb:	e8 00 00 00 00       	callq  c0 <main+0x8c>
+  c0:	b8 00 00 00 00       	mov    $0x0,%eax
+  c5:	48 8b 55 f8          	mov    -0x8(%rbp),%rdx
+  c9:	64 48 33 14 25 28 00 	xor    %fs:0x28,%rdx
+  d0:	00 00 
+  d2:	74 05                	je     d9 <main+0xa5>
+  d4:	e8 00 00 00 00       	callq  d9 <main+0xa5>
+  d9:	c9                   	leaveq 
+  da:	c3                   	retq   
