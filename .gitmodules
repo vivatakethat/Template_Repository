@@ -1,0 +1,3 @@
+[submodule "ork_Linux/systeminfo/OS_BaseInfo"]
+	path = ork_Linux/systeminfo/OS_BaseInfo
+	url = git@github.com:vivatakethat/Template_Repository.git
