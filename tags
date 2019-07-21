@@ -1,0 +1,133 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/435bffb9/
+BUFSIZE	temp/sg_inq.c	/^#define BUFSIZE /;"	d	file:
+INCLUDE_NLOHMANN_JSON_HPP_	json/single_include/json.hpp	/^#define INCLUDE_NLOHMANN_JSON_HPP_$/;"	d
+JSON_CATCH	json/single_include/json.hpp	/^    #define JSON_CATCH /;"	d
+JSON_CATCH	json/single_include/json.hpp	/^    #define JSON_CATCH(/;"	d
+JSON_DEPRECATED	json/single_include/json.hpp	/^    #define JSON_DEPRECATED /;"	d
+JSON_DEPRECATED	json/single_include/json.hpp	/^    #define JSON_DEPRECATED$/;"	d
+JSON_HAS_CPP_14	json/single_include/json.hpp	/^    #define JSON_HAS_CPP_14$/;"	d
+JSON_HAS_CPP_17	json/single_include/json.hpp	/^    #define JSON_HAS_CPP_17$/;"	d
+JSON_INTERNAL_CATCH	json/single_include/json.hpp	/^    #define JSON_INTERNAL_CATCH /;"	d
+JSON_INTERNAL_CATCH	json/single_include/json.hpp	/^    #define JSON_INTERNAL_CATCH(/;"	d
+JSON_LIKELY	json/single_include/json.hpp	/^    #define JSON_LIKELY(/;"	d
+JSON_NODISCARD	json/single_include/json.hpp	/^            #define JSON_NODISCARD /;"	d
+JSON_NODISCARD	json/single_include/json.hpp	/^            #define JSON_NODISCARD$/;"	d
+JSON_NODISCARD	json/single_include/json.hpp	/^        #define JSON_NODISCARD /;"	d
+JSON_NODISCARD	json/single_include/json.hpp	/^        #define JSON_NODISCARD$/;"	d
+JSON_NODISCARD	json/single_include/json.hpp	/^    #define JSON_NODISCARD$/;"	d
+JSON_THROW	json/single_include/json.hpp	/^    #define JSON_THROW /;"	d
+JSON_THROW	json/single_include/json.hpp	/^    #define JSON_THROW(/;"	d
+JSON_TRY	json/single_include/json.hpp	/^    #define JSON_TRY /;"	d
+JSON_UNLIKELY	json/single_include/json.hpp	/^    #define JSON_UNLIKELY(/;"	d
+L2	ProgrammingInLinuxEnvironmentFromUsespaceToKernel_Master/0.4.3.s	/^.L2:$/;"	l
+L3	ProgrammingInLinuxEnvironmentFromUsespaceToKernel_Master/0.4.3.s	/^.L3:$/;"	l
+LC0	ProgrammingInLinuxEnvironmentFromUsespaceToKernel_Master/0.4.3.s	/^.LC0:$/;"	l
+LFB11	ProgrammingInLinuxEnvironmentFromUsespaceToKernel_Master/0.4.3.s	/^.LFB11:$/;"	l
+LFB12	ProgrammingInLinuxEnvironmentFromUsespaceToKernel_Master/0.4.3.s	/^.LFB12:$/;"	l
+LFE11	ProgrammingInLinuxEnvironmentFromUsespaceToKernel_Master/0.4.3.s	/^.LFE11:$/;"	l
+LFE12	ProgrammingInLinuxEnvironmentFromUsespaceToKernel_Master/0.4.3.s	/^.LFE12:$/;"	l
+LOOPS	ProgrammingInLinuxEnvironmentFromUsespaceToKernel_Master/0.4.3.cpp	/^#define LOOPS /;"	d	file:
+NLOHMANN_BASIC_JSON_TPL	json/single_include/json.hpp	/^#define NLOHMANN_BASIC_JSON_TPL /;"	d
+NLOHMANN_BASIC_JSON_TPL_DECLARATION	json/single_include/json.hpp	/^#define NLOHMANN_BASIC_JSON_TPL_DECLARATION /;"	d
+NLOHMANN_JSON_SERIALIZE_ENUM	json/single_include/json.hpp	/^#define NLOHMANN_JSON_SERIALIZE_ENUM(/;"	d
+NLOHMANN_JSON_VERSION_MAJOR	json/single_include/json.hpp	/^#define NLOHMANN_JSON_VERSION_MAJOR /;"	d
+NLOHMANN_JSON_VERSION_MINOR	json/single_include/json.hpp	/^#define NLOHMANN_JSON_VERSION_MINOR /;"	d
+NLOHMANN_JSON_VERSION_PATCH	json/single_include/json.hpp	/^#define NLOHMANN_JSON_VERSION_PATCH /;"	d
+_ZL6threadPv	ProgrammingInLinuxEnvironmentFromUsespaceToKernel_Master/0.4.3.s	/^_ZL6threadPv:$/;"	l
+buff	temp/sg_inq.c	/^char buff[BUFSIZE]; $/;"	v	typeref:typename:char[]
+byte	json/single_include/json.hpp	/^    const std::size_t byte;$/;"	m	class:nlohmann::detail::parse_error	typeref:typename:const std::size_t
+chars_read_current_line	json/single_include/json.hpp	/^    std::size_t chars_read_current_line = 0;$/;"	m	struct:nlohmann::detail::position_t	typeref:typename:std::size_t
+chars_read_total	json/single_include/json.hpp	/^    std::size_t chars_read_total = 0;$/;"	m	struct:nlohmann::detail::position_t	typeref:typename:std::size_t
+counter	ProgrammingInLinuxEnvironmentFromUsespaceToKernel_Master/0.4.3.cpp	/^static int counter=0;$/;"	v	typeref:typename:int	file:
+cpu_freq	temp/demo_get_pcInfo.cpp	/^ifstream cpu_freq("\/sys\/devices\/system\/cpu\/cpu0\/cpufreq\/cpuinfo_cur_freq"); $/;"	v	typeref:typename:ifstream
+cpu_temp	temp/demo_get_pcInfo.cpp	/^ifstream cpu_temp("\/sys\/class\/thermal\/thermal_zone0\/temp"); $/;"	v	typeref:typename:ifstream
+cpufrequency	temp/demo_get_pcInfo.cpp	/^std::string cpufrequency = strStream.str(); $/;"	v	typeref:typename:std::string
+cputemp	temp/demo_get_pcInfo.cpp	/^std::string cputemp = strConvert.str(); $/;"	v	typeref:typename:std::string
+create	json/single_include/json.hpp	/^    static invalid_iterator create(int id_, const std::string& what_arg)$/;"	f	class:nlohmann::detail::invalid_iterator	typeref:typename:invalid_iterator
+create	json/single_include/json.hpp	/^    static other_error create(int id_, const std::string& what_arg)$/;"	f	class:nlohmann::detail::other_error	typeref:typename:other_error
+create	json/single_include/json.hpp	/^    static out_of_range create(int id_, const std::string& what_arg)$/;"	f	class:nlohmann::detail::out_of_range	typeref:typename:out_of_range
+create	json/single_include/json.hpp	/^    static parse_error create(int id_, const position_t& pos, const std::string& what_arg)$/;"	f	class:nlohmann::detail::parse_error	typeref:typename:parse_error
+create	json/single_include/json.hpp	/^    static parse_error create(int id_, std::size_t byte_, const std::string& what_arg)$/;"	f	class:nlohmann::detail::parse_error	typeref:typename:parse_error
+create	json/single_include/json.hpp	/^    static type_error create(int id_, const std::string& what_arg)$/;"	f	class:nlohmann::detail::type_error	typeref:typename:type_error
+detail	json/single_include/json.hpp	/^namespace detail$/;"	n	namespace:nlohmann
+detected_or	json/single_include/json.hpp	/^using detected_or = detector<Default, void, Op, Args...>;$/;"	t	namespace:nlohmann	typeref:typename:detector<Default,void,Op,Args...>
+detected_or_t	json/single_include/json.hpp	/^using detected_or_t = typename detected_or<Default, Op, Args...>::type;$/;"	t	namespace:nlohmann	typeref:typename:detected_or<Default,Op,Args...>::type
+detected_t	json/single_include/json.hpp	/^using detected_t = typename detector<nonesuch, void, Op, Args...>::type;$/;"	t	namespace:nlohmann	typeref:typename:detector<nonesuch,void,Op,Args...>::type
+detector	json/single_include/json.hpp	/^struct detector$/;"	s	namespace:nlohmann::detail
+enable_if_t	json/single_include/json.hpp	/^using enable_if_t = typename std::enable_if<B, T>::type;$/;"	t	namespace:nlohmann::detail	typeref:typename:std::enable_if<B,T>::type
+exception	json/single_include/json.hpp	/^    exception(int id_, const char* what_arg) : id(id_), m(what_arg) {}$/;"	f	class:nlohmann::detail::exception
+exception	json/single_include/json.hpp	/^class exception : public std::exception$/;"	c	namespace:nlohmann::detail
+fsinfo	temp/demo_get_pcInfo.cpp	/^struct statvfs fsinfo; $/;"	v	typeref:struct:statvfs
+hdd_free	temp/demo_get_pcInfo.cpp	/^unsigned long hdd_free; $/;"	v	typeref:typename:unsigned long
+hdd_size	temp/demo_get_pcInfo.cpp	/^unsigned long hdd_size; $/;"	v	typeref:typename:unsigned long
+id	json/single_include/json.hpp	/^    const int id;$/;"	m	class:nlohmann::detail::exception	typeref:typename:const int
+index_sequence	json/single_include/json.hpp	/^struct index_sequence$/;"	s	namespace:nlohmann::detail
+index_sequence_for	json/single_include/json.hpp	/^using index_sequence_for = make_index_sequence<sizeof...(Ts)>;$/;"	t	namespace:nlohmann::detail
+info	temp/demo_get_pcInfo.cpp	/^struct sysinfo info; $/;"	v	typeref:struct:sysinfo
+invalid_iterator	json/single_include/json.hpp	/^    invalid_iterator(int id_, const char* what_arg)$/;"	f	class:nlohmann::detail::invalid_iterator
+invalid_iterator	json/single_include/json.hpp	/^class invalid_iterator : public exception$/;"	c	namespace:nlohmann::detail
+is_detected	json/single_include/json.hpp	/^using is_detected = typename detector<nonesuch, void, Op, Args...>::value_t;$/;"	t	namespace:nlohmann	typeref:typename:detector<nonesuch,void,Op,Args...>::value_t
+is_detected_convertible	json/single_include/json.hpp	/^using is_detected_convertible =$/;"	t	namespace:nlohmann	typeref:typename:std::is_convertible<detected_t<Op,Args...>,To>
+is_detected_exact	json/single_include/json.hpp	/^using is_detected_exact = std::is_same<Expected, detected_t<Op, Args...>>;$/;"	t	namespace:nlohmann	typeref:typename:std::is_same<Expected,detected_t<Op,Args...>>
+iterator_traits	json/single_include/json.hpp	/^struct iterator_traits$/;"	s	namespace:nlohmann::detail
+iterator_traits	json/single_include/json.hpp	/^struct iterator_traits<T*, enable_if_t<std::is_object<T>::value>>$/;"	v	namespace:nlohmann::detail	typeref:struct:iterator_traits template struct
+iterator_types	json/single_include/json.hpp	/^struct iterator_types {};$/;"	s	namespace:nlohmann::detail
+json	json/array2_test.cpp	/^ using json = nlohmann::json;$/;"	t	typeref:typename:nlohmann::json	file:
+json	json/array_test.cpp	/^using json = nlohmann::json;$/;"	t	typeref:typename:nlohmann::json	file:
+json	json/get_json.cpp	/^using json=nlohmann::json;$/;"	t	typeref:typename:nlohmann::json	file:
+json	json/test_json.cpp	/^using json = nlohmann::json;$/;"	t	typeref:typename:nlohmann::json	file:
+json	json/to_string_literal.cpp	/^using json = nlohmann::json;$/;"	t	typeref:typename:nlohmann::json	file:
+lines_read	json/single_include/json.hpp	/^    std::size_t lines_read = 0;$/;"	m	struct:nlohmann::detail::position_t	typeref:typename:std::size_t
+m	json/single_include/json.hpp	/^    std::runtime_error m;$/;"	m	class:nlohmann::detail::exception	typeref:typename:std::runtime_error
+main	ProgrammingInLinuxEnvironmentFromUsespaceToKernel_Master/0.4.3.cpp	/^int main(void)$/;"	f	typeref:typename:int
+main	ProgrammingInLinuxEnvironmentFromUsespaceToKernel_Master/0.4.3.s	/^main:$/;"	l
+main	json/array2_test.cpp	/^ int main()$/;"	f	typeref:typename:int
+main	json/array_test.cpp	/^int main()$/;"	f	typeref:typename:int
+main	json/get_json.cpp	/^int main()$/;"	f	typeref:typename:int
+main	json/test_json.cpp	/^int main()$/;"	f	typeref:typename:int
+main	json/to_string_literal.cpp	/^int main()$/;"	f	typeref:typename:int
+main	temp/sg_inq.c	/^int main(int argc, char *argv[]) $/;"	f	typeref:typename:int
+make_index_sequence	json/single_include/json.hpp	/^struct make_index_sequence$/;"	s	namespace:nlohmann::detail
+make_index_sequence	json/single_include/json.hpp	/^template<> struct make_index_sequence<0> : index_sequence<> {};$/;"	s	namespace:nlohmann::detail
+make_index_sequence	json/single_include/json.hpp	/^template<> struct make_index_sequence<1> : index_sequence<0> {};$/;"	s	namespace:nlohmann::detail
+make_void	json/single_include/json.hpp	/^template <typename ...Ts> struct make_void$/;"	s	namespace:nlohmann::detail
+mem_size	temp/demo_get_pcInfo.cpp	/^std::string mem_size = to_string((size_t)info.totalram *  (size_t)info.mem_unit); $/;"	v	typeref:typename:std::string
+name	json/single_include/json.hpp	/^    static std::string name(const std::string& ename, int id_)$/;"	f	class:nlohmann::detail::exception	typeref:typename:std::string
+nlohmann	json/single_include/json.hpp	/^namespace nlohmann$/;"	n
+nonesuch	json/single_include/json.hpp	/^struct nonesuch$/;"	s	namespace:nlohmann::detail
+num_cpu	temp/demo_get_pcInfo.cpp	/^unsigned num_cpu = std::thread::hardware_concurrency(); $/;"	v	typeref:typename:unsigned
+operator size_t	json/single_include/json.hpp	/^    constexpr operator size_t() const$/;"	f	struct:nlohmann::detail::position_t
+other_error	json/single_include/json.hpp	/^    other_error(int id_, const char* what_arg) : exception(id_, what_arg) {}$/;"	f	class:nlohmann::detail::other_error
+other_error	json/single_include/json.hpp	/^class other_error : public exception$/;"	c	namespace:nlohmann::detail
+out_of_range	json/single_include/json.hpp	/^    out_of_range(int id_, const char* what_arg) : exception(id_, what_arg) {}$/;"	f	class:nlohmann::detail::out_of_range
+out_of_range	json/single_include/json.hpp	/^class out_of_range : public exception$/;"	c	namespace:nlohmann::detail
+parse_error	json/single_include/json.hpp	/^    parse_error(int id_, std::size_t byte_, const char* what_arg)$/;"	f	class:nlohmann::detail::parse_error
+parse_error	json/single_include/json.hpp	/^class parse_error : public exception$/;"	c	namespace:nlohmann::detail
+position_string	json/single_include/json.hpp	/^    static std::string position_string(const position_t& pos)$/;"	f	class:nlohmann::detail::parse_error	typeref:typename:std::string
+position_t	json/single_include/json.hpp	/^struct position_t$/;"	s	namespace:nlohmann::detail
+priority_tag	json/single_include/json.hpp	/^template<> struct priority_tag<0> {};$/;"	s	namespace:nlohmann::detail
+priority_tag	json/single_include/json.hpp	/^template<unsigned N> struct priority_tag : priority_tag < N - 1 > {};$/;"	s	namespace:nlohmann::detail
+size	json/single_include/json.hpp	/^    static constexpr std::size_t size() noexcept$/;"	f	struct:nlohmann::detail::index_sequence	typeref:typename:std::size_t
+static_const	json/single_include/json.hpp	/^struct static_const$/;"	s	namespace:nlohmann::detail
+strConvert	temp/demo_get_pcInfo.cpp	/^std::ostringstream strConvert; $/;"	v	typeref:typename:std::ostringstream
+strStream	temp/demo_get_pcInfo.cpp	/^std::stringstream strStream; $/;"	v	typeref:typename:std::stringstream
+thread	ProgrammingInLinuxEnvironmentFromUsespaceToKernel_Master/0.4.3.cpp	/^static void * thread(void *unused)$/;"	f	typeref:typename:void *	file:
+type	json/single_include/json.hpp	/^    using type = Default;$/;"	t	struct:nlohmann::detail::detector	typeref:typename:Default
+type	json/single_include/json.hpp	/^    using type = Op<Args...>;$/;"	v	namespace:nlohmann::detail	typeref:struct:detector using
+type	json/single_include/json.hpp	/^    using type = index_sequence;$/;"	t	struct:nlohmann::detail::index_sequence	typeref:typename:index_sequence
+type	json/single_include/json.hpp	/^    using type = void;$/;"	t	struct:nlohmann::detail::make_void	typeref:typename:void
+type_error	json/single_include/json.hpp	/^    type_error(int id_, const char* what_arg) : exception(id_, what_arg) {}$/;"	f	class:nlohmann::detail::type_error
+type_error	json/single_include/json.hpp	/^class type_error : public exception$/;"	c	namespace:nlohmann::detail
+uncvref_t	json/single_include/json.hpp	/^using uncvref_t = typename std::remove_cv<typename std::remove_reference<T>::type>::type;$/;"	t	namespace:nlohmann::detail	typeref:typename:std::remove_cv<typename std::remove_reference<T>::type>::type
+value	json/single_include/json.hpp	/^    static constexpr T value{};$/;"	m	struct:nlohmann::detail::static_const	typeref:typename:T
+value	json/single_include/json.hpp	/^constexpr T static_const<T>::value;$/;"	m	class:nlohmann::detail::static_const<T>	typeref:typename:T
+value_t	json/single_include/json.hpp	/^    using value_t = std::false_type;$/;"	t	struct:nlohmann::detail::detector	typeref:typename:std::false_type
+value_type	json/single_include/json.hpp	/^    using value_type = std::size_t;$/;"	t	struct:nlohmann::detail::index_sequence	typeref:typename:std::size_t
+void_t	json/single_include/json.hpp	/^template <typename ...Ts> using void_t = typename make_void<Ts...>::type;$/;"	t	namespace:nlohmann::detail	typeref:typename:make_void<Ts...>::type
+what	json/single_include/json.hpp	/^    const char* what() const noexcept override$/;"	f	class:nlohmann::detail::exception	typeref:typename:const char *
