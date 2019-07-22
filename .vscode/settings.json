@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "byteorder.h": "c",
+        "fs.h": "c",
+        "hdreg.h": "c",
+        "parted.h": "c",
+        "fcntl.h": "c",
+        "errno.h": "c",
+        "getopt.h": "c"
+    }
+}
