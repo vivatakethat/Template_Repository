@@ -32,9 +32,8 @@ json j2 = {
   }}
 };
 
-cout<<j2["pi"]<<endl;
-
-cout<<j2["happy"]<<endl;
+ 
+ cout<<j2["object"]["value"]<<endl;
 
     return 0;
 }
