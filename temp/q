@@ -1,0 +1,373 @@
+COMMAND(1P)                POSIX Programmer's Manual               COMMAND(1P)
+
+PPRROOLLOOGG
+       This  manual  page is part of the POSIX Programmer's Manual.  The Linux
+       implementation of this interface may differ (consult the  corresponding
+       Linux  manual page for details of Linux behavior), or the interface may
+       not be implemented on Linux.
+
+NNAAMMEE
+       command — execute a simple command
+
+SSYYNNOOPPSSIISS
+       command [[−p]] _c_o_m_m_a_n_d___n_a_m_e [[_a_r_g_u_m_e_n_t...]]
+
+       command [[−p]][[−v|−V]] _c_o_m_m_a_n_d___n_a_m_e
+
+DDEESSCCRRIIPPTTIIOONN
+       The _c_o_m_m_a_n_d utility shall cause the shell to treat the arguments  as  a
+       simple command, suppressing the shell function lookup that is described
+       in _S_e_c_t_i_o_n _2_._9_._1_._1, _C_o_m_m_a_n_d _S_e_a_r_c_h _a_n_d _E_x_e_c_u_t_i_o_n, item 1b.
+
+       If the _c_o_m_m_a_n_d___n_a_m_e is the same as the  name  of  one  of  the  special
+       built-in  utilities,  the  special properties in the enumerated list at
+       the beginning of _S_e_c_t_i_o_n _2_._1_4, _S_p_e_c_i_a_l _B_u_i_l_t_-_I_n _U_t_i_l_i_t_i_e_s shall not oc‐
+       cur. In every other respect, if _c_o_m_m_a_n_d___n_a_m_e is not the name of a func‐
+       tion, the effect of _c_o_m_m_a_n_d (with no options)  shall  be  the  same  as
+       omitting _c_o_m_m_a_n_d.
+
+       When the −−vv or −−VV option is used, the _c_o_m_m_a_n_d utility shall provide in‐
+       formation concerning how a command name is interpreted by the shell.
+
+OOPPTTIIOONNSS
+       The _c_o_m_m_a_n_d utility shall conform to the  Base  Definitions  volume  of
+       POSIX.1‐2008, _S_e_c_t_i_o_n _1_2_._2, _U_t_i_l_i_t_y _S_y_n_t_a_x _G_u_i_d_e_l_i_n_e_s.
+
+       The following options shall be supported:
+
+       −−pp        Perform  the  command  search  using a default value for _P_A_T_H
+                 that is guaranteed to find all of the standard utilities.
+
+       −−vv        Write a string to standard output that indicates the pathname
+                 or  command  that  will  be used by the shell, in the current
+                 shell execution environment (see _S_e_c_t_i_o_n _2_._1_2,  _S_h_e_l_l  _E_x_e_c_u_‐
+                 _t_i_o_n  _E_n_v_i_r_o_n_m_e_n_t), to invoke _c_o_m_m_a_n_d___n_a_m_e, but do not invoke
+                 _c_o_m_m_a_n_d___n_a_m_e.
+
+                  *  Utilities, regular built-in utilities, _c_o_m_m_a_n_d___n_a_m_es  in‐
+                     cluding  a  <slash> character, and any implementation-de‐
+                     fined functions that are found using  the  _P_A_T_H  variable
+                     (as described in _S_e_c_t_i_o_n _2_._9_._1_._1, _C_o_m_m_a_n_d _S_e_a_r_c_h _a_n_d _E_x_e_‐
+                     _c_u_t_i_o_n), shall be written as absolute pathnames.
+
+                  *  Shell  functions,  special  built-in  utilities,  regular
+                     built-in utilities not associated with a _P_A_T_H search, and
+                     shell reserved words  shall  be  written  as  just  their
+                     names.
+
+                  *  An  alias  shall be written as a command line that repre‐
+                     sents its alias definition.
+
+                  *  Otherwise, no output shall be written and the exit status
+                     shall reflect that the name was not found.
+
+       −−VV        Write a string to standard output that indicates how the name
+                 given in the _c_o_m_m_a_n_d___n_a_m_e operand will be interpreted by  the
+                 shell,  in  the current shell execution environment (see _S_e_c_‐
+                 _t_i_o_n _2_._1_2, _S_h_e_l_l _E_x_e_c_u_t_i_o_n _E_n_v_i_r_o_n_m_e_n_t), but  do  not  invoke
+                 _c_o_m_m_a_n_d___n_a_m_e.  Although the format of this string is unspeci‐
+                 fied, it shall indicate in which of the following  categories
+                 _c_o_m_m_a_n_d___n_a_m_e falls and shall include the information stated:
+
+                  *  Utilities,  regular built-in utilities, and any implemen‐
+                     tation-defined functions that are found  using  the  _P_A_T_H
+                     variable (as described in _S_e_c_t_i_o_n _2_._9_._1_._1, _C_o_m_m_a_n_d _S_e_a_r_c_h
+                     _a_n_d _E_x_e_c_u_t_i_o_n), shall be identified as such  and  include
+                     the absolute pathname in the string.
+
+                  *  Other shell functions shall be identified as functions.
+
+                  *  Aliases  shall be identified as aliases and their defini‐
+                     tions included in the string.
+
+                  *  Special built-in utilities shall be identified as special
+                     built-in utilities.
+
+                  *  Regular  built-in  utilities  not  associated with a _P_A_T_H
+                     search shall be identified as regular built-in utilities.
+                     (The term ``regular'' need not be used.)
+
+                  *  Shell  reserved  words  shall  be  identified as reserved
+                     words.
+
+OOPPEERRAANNDDSS
+       The following operands shall be supported:
+
+       _a_r_g_u_m_e_n_t  One of the strings treated as an argument to _c_o_m_m_a_n_d___n_a_m_e.
+
+       _c_o_m_m_a_n_d___n_a_m_e
+                 The name of a utility or a special built-in utility.
+
+SSTTDDIINN
+       Not used.
+
+IINNPPUUTT FFIILLEESS
+       None.
+
+EENNVVIIRROONNMMEENNTT VVAARRIIAABBLLEESS
+       The following environment variables shall affect the execution of  _c_o_m_‐
+       _m_a_n_d:
+
+       _L_A_N_G      Provide  a  default  value for the internationalization vari‐
+                 ables that are unset or null. (See the Base Definitions  vol‐
+                 ume  of POSIX.1‐2008, _S_e_c_t_i_o_n _8_._2, _I_n_t_e_r_n_a_t_i_o_n_a_l_i_z_a_t_i_o_n _V_a_r_i_‐
+                 _a_b_l_e_s for the precedence  of  internationalization  variables
+                 used to determine the values of locale categories.)
+
+       _L_C___A_L_L    If  set  to  a non-empty string value, override the values of
+                 all the other internationalization variables.
+
+       _L_C___C_T_Y_P_E  Determine the locale for the interpretation of  sequences  of
+                 bytes of text data as characters (for example, single-byte as
+                 opposed to multi-byte characters in arguments).
+
+       _L_C___M_E_S_S_A_G_E_S
+                 Determine the locale that should be used to affect the format
+                 and contents of diagnostic messages written to standard error
+                 and informative messages written to standard output.
+
+       _N_L_S_P_A_T_H   Determine the location of message catalogs for the processing
+                 of _L_C___M_E_S_S_A_G_E_S.
+
+       _P_A_T_H      Determine  the search path used during the command search de‐
+                 scribed in _S_e_c_t_i_o_n _2_._9_._1_._1, _C_o_m_m_a_n_d _S_e_a_r_c_h _a_n_d _E_x_e_c_u_t_i_o_n, ex‐
+                 cept as described under the −−pp option.
+
+AASSYYNNCCHHRROONNOOUUSS EEVVEENNTTSS
+       Default.
+
+SSTTDDOOUUTT
+       When the −−vv option is specified, standard output shall be formatted as:
+
+           ""%%ss\\nn"",, <<_p_a_t_h_n_a_m_e _o_r _c_o_m_m_a_n_d>
+
+       When the −−VV option is specified, standard output shall be formatted as:
+
+           ""%%ss\\nn"",, <<_u_n_s_p_e_c_i_f_i_e_d>
+
+SSTTDDEERRRR
+       The standard error shall be used only for diagnostic messages.
+
+OOUUTTPPUUTT FFIILLEESS
+       None.
+
+EEXXTTEENNDDEEDD DDEESSCCRRIIPPTTIIOONN
+       None.
+
+EEXXIITT SSTTAATTUUSS
+       When  the  −−vv  or  −−VV  options are specified, the following exit values
+       shall be returned:
+
+        0    Successful completion.
+
+       >0    The _c_o_m_m_a_n_d___n_a_m_e could not be found or an error occurred.
+
+       Otherwise, the following exit values shall be returned:
+
+       126   The utility specified by _c_o_m_m_a_n_d___n_a_m_e was found but could not  be
+             invoked.
+
+       127   An error occurred in the _c_o_m_m_a_n_d utility or the utility specified
+             by _c_o_m_m_a_n_d___n_a_m_e could not be found.
+
+       Otherwise, the exit status of _c_o_m_m_a_n_d shall be that of the simple  com‐
+       mand specified by the arguments to _c_o_m_m_a_n_d.
+
+CCOONNSSEEQQUUEENNCCEESS OOFF EERRRROORRSS
+       Default.
+
+       _T_h_e _f_o_l_l_o_w_i_n_g _s_e_c_t_i_o_n_s _a_r_e _i_n_f_o_r_m_a_t_i_v_e_.
+
+AAPPPPLLIICCAATTIIOONN UUSSAAGGEE
+       The  order  for  command  search  allows  functions to override regular
+       built-ins and path searches. This utility is necessary to  allow  func‐
+       tions that have the same name as a utility to call the utility (instead
+       of a recursive call to the function).
+
+       The system default path is available using _g_e_t_c_o_n_f; however, since _g_e_t_‐
+       _c_o_n_f  may  need to have the _P_A_T_H set up before it can be called itself,
+       the following can be used:
+
+           ccoommmmaanndd −−pp ggeettccoonnff PPAATTHH
+
+       There are some advantages to suppressing the special characteristics of
+       special built-ins on occasion. For example:
+
+           ccoommmmaanndd eexxeecc >> _u_n_w_r_i_t_a_b_l_e_-_f_i_l_e
+
+       does  not  cause  a non-interactive script to abort, so that the output
+       status can be checked by the script.
+
+       The _c_o_m_m_a_n_d, _e_n_v, _n_o_h_u_p, _t_i_m_e, and _x_a_r_g_s utilities have been  specified
+       to  use  exit code 127 if an error occurs so that applications can dis‐
+       tinguish ``failure to find a utility'' from  ``invoked  utility  exited
+       with  an error indication''. The value 127 was chosen because it is not
+       commonly used for other meanings; most utilities use small  values  for
+       ``normal  error  conditions''  and the values above 128 can be confused
+       with termination due to receipt of a signal. The value 126  was  chosen
+       in  a  similar  manner to indicate that the utility could be found, but
+       not invoked. Some scripts produce meaningful error messages differenti‐
+       ating the 126 and 127 cases. The distinction between exit codes 126 and
+       127 is based on KornShell practice that uses 127 when all  attempts  to
+       _e_x_e_c  the  utility fail with [[EENNOOEENNTT]], and uses 126 when any attempt to
+       _e_x_e_c the utility fails for any other reason.
+
+       Since the −−vv and −−VV options of _c_o_m_m_a_n_d produce output  in  relation  to
+       the  current shell execution environment, _c_o_m_m_a_n_d is generally provided
+       as a shell regular built-in. If it is called in a subshell or  separate
+       utility execution environment, such as one of the following:
+
+           ((PPAATTHH==ffoooo ccoommmmaanndd −−vv))
+            nnoohhuupp ccoommmmaanndd −−vv
+
+       it  does  not  necessarily  produce  correct results. For example, when
+       called with _n_o_h_u_p or an _e_x_e_c function, in a separate utility  execution
+       environment,  most  implementations  are  not able to identify aliases,
+       functions, or special built-ins.
+
+       Two types of regular built-ins could be encountered  on  a  system  and
+       these  are described separately by _c_o_m_m_a_n_d.  The description of command
+       search in _S_e_c_t_i_o_n _2_._9_._1_._1, _C_o_m_m_a_n_d _S_e_a_r_c_h _a_n_d _E_x_e_c_u_t_i_o_n  allows  for  a
+       standard  utility to be implemented as a regular built-in as long as it
+       is found in the appropriate place in a _P_A_T_H search.  So,  for  example,
+       _c_o_m_m_a_n_d  −−vv  _t_r_u_e might yield //bbiinn//ttrruuee or some similar pathname. Other
+       implementation-defined utilities that are not defined by this volume of
+       POSIX.1‐2008 might exist only as built-ins and have no pathname associ‐
+       ated with them. These produce output identified as (regular) built-ins.
+       Applications  encountering these are not able to count on _e_x_e_cing them,
+       using them with _n_o_h_u_p, overriding them with a different  _P_A_T_H,  and  so
+       on.
+
+EEXXAAMMPPLLEESS
+        1. Make  a version of _c_d that always prints out the new working direc‐
+           tory exactly once:
+
+               ccdd(()) {{
+                   ccoommmmaanndd ccdd ""$$@@"" >>//ddeevv//nnuullll
+                   ppwwdd
+               }}
+
+        2. Start off a ``secure shell script'' in which the script avoids  be‐
+           ing spoofed by its parent:
+
+               IIFFSS==''
+               ''
+               ##    TThhee pprreecceeddiinngg vvaalluuee sshhoouulldd bbee <<ssppaaccee>><<ttaabb>><<nneewwlliinnee>>..
+               ##    SSeett IIFFSS ttoo iittss ddeeffaauulltt vvaalluuee..
+
+               \unalias −a
+               #    Unset all possible aliases.
+               #    Note that unalias is escaped to prevent an alias
+               #    being used for unalias.
+
+               unset −f command
+               #    Ensure command is not a user function.
+
+               PATH="$(command −p getconf PATH):$PATH"
+               #    Put on a reliable PATH prefix.
+
+               #    ...
+
+           At  this point, given correct permissions on the directories called
+           by _P_A_T_H, the script has the ability to ensure that any  utility  it
+           calls is the intended one. It is being very cautious because it as‐
+           sumes that implementation extensions may be present that would  al‐
+           low  user functions to exist when it is invoked; this capability is
+           not specified by this volume of POSIX.1‐2008, but it is not prohib‐
+           ited  as  an  extension. For example, the _E_N_V variable precedes the
+           invocation of the script with a user start-up script. Such a script
+           could define functions to spoof the application.
+
+RRAATTIIOONNAALLEE
+       Since _c_o_m_m_a_n_d is a regular built-in utility it is always found prior to
+       the _P_A_T_H search.
+
+       There is nothing in the description of _c_o_m_m_a_n_d that implies the command
+       line  is  parsed any differently from that of any other simple command.
+       For example:
+
+           ccoommmmaanndd aa || bb ;; cc
+
+       is not parsed in any special way that causes ''||'' or '';;'' to  be  treated
+       other  than  a  pipe  operator or <semicolon> or that prevents function
+       lookup on bb or cc.
+
+       The _c_o_m_m_a_n_d utility is somewhat similar to  the  Eighth  Edition  shell
+       _b_u_i_l_t_i_n  command,  but  since  _c_o_m_m_a_n_d  also goes to the file system to
+       search for utilities, the name _b_u_i_l_t_i_n would not be intuitive.
+
+       The _c_o_m_m_a_n_d utility is most likely to be provided as a  regular  built-
+       in. It is not listed as a special built-in for the following reasons:
+
+        *  The  removal of exportable functions made the special precedence of
+           a special built-in unnecessary.
+
+        *  A special built-in has special properties (see _S_e_c_t_i_o_n  _2_._1_4,  _S_p_e_‐
+           _c_i_a_l _B_u_i_l_t_-_I_n _U_t_i_l_i_t_i_e_s) that were inappropriate for invoking other
+           utilities. For example, two commands such as:
+
+               ddaattee >> _u_n_w_r_i_t_a_b_l_e_-_f_i_l_e
+
+               command date > _u_n_w_r_i_t_a_b_l_e_-_f_i_l_e
+
+           would have entirely different results; in a non-interactive script,
+           the  former  would continue to execute the next command, the latter
+           would abort. Introducing this semantic difference along  with  sup‐
+           pressing functions was seen to be non-intuitive.
+
+       The  −−pp  option  is present because it is useful to be able to ensure a
+       safe path search that finds all the  standard  utilities.  This  search
+       might  not  be identical to the one that occurs through one of the _e_x_e_c
+       functions (as defined in the System Interfaces volume of  POSIX.1‐2008)
+       when  _P_A_T_H is unset. At the very least, this feature is required to al‐
+       low the script to access the correct version of  _g_e_t_c_o_n_f  so  that  the
+       value of the default path can be accurately retrieved.
+
+       The  _c_o_m_m_a_n_d  −−vv and −−VV options were added to satisfy requirements from
+       users that are currently accomplished  by  three  different  historical
+       utilities:  _t_y_p_e  in  the  System V shell, _w_h_e_n_c_e in the KornShell, and
+       _w_h_i_c_h in the C shell. Since there is no historical agreement on how and
+       what to accomplish here, the POSIX _c_o_m_m_a_n_d utility was enhanced and the
+       historical utilities were left unmodified.  The C  shell  _w_h_i_c_h  merely
+       conducts a path search. The KornShell _w_h_e_n_c_e is more elaborate—in addi‐
+       tion to the categories required by POSIX, it also  reports  on  tracked
+       aliases, exported aliases, and undefined functions.
+
+       The output format of −−VV was left mostly unspecified because human users
+       are its only audience.  Applications should  not  be  written  to  care
+       about  this information; they can use the output of −−vv to differentiate
+       between various types of commands, but the additional information  that
+       may  be  emitted by the more verbose −−VV is not needed and should not be
+       arbitrarily constrained in its verbosity or localization  for  applica‐
+       tion parsing reasons.
+
+FFUUTTUURREE DDIIRREECCTTIIOONNSS
+       None.
+
+SSEEEE AALLSSOO
+       _S_e_c_t_i_o_n _2_._9_._1_._1, _C_o_m_m_a_n_d _S_e_a_r_c_h _a_n_d _E_x_e_c_u_t_i_o_n, _S_e_c_t_i_o_n _2_._1_2, _S_h_e_l_l _E_x_e_‐
+       _c_u_t_i_o_n _E_n_v_i_r_o_n_m_e_n_t, _S_e_c_t_i_o_n _2_._1_4, _S_p_e_c_i_a_l _B_u_i_l_t_-_I_n _U_t_i_l_i_t_i_e_s, _s_h, _t_y_p_e
+
+       The Base Definitions volume of  POSIX.1‐2008,  _C_h_a_p_t_e_r  _8,  _E_n_v_i_r_o_n_m_e_n_t
+       _V_a_r_i_a_b_l_e_s, _S_e_c_t_i_o_n _1_2_._2, _U_t_i_l_i_t_y _S_y_n_t_a_x _G_u_i_d_e_l_i_n_e_s
+
+       The System Interfaces volume of POSIX.1‐2008, _e_x_e_c
+
+CCOOPPYYRRIIGGHHTT
+       Portions  of  this text are reprinted and reproduced in electronic form
+       from IEEE Std 1003.1, 2013 Edition, Standard for Information Technology
+       --  Portable  Operating  System  Interface (POSIX), The Open Group Base
+       Specifications Issue 7, Copyright (C) 2013 by the Institute of Electri‐
+       cal  and  Electronics  Engineers,  Inc  and  The  Open Group.  (This is
+       POSIX.1-2008 with the 2013 Technical Corrigendum  1  applied.)  In  the
+       event of any discrepancy between this version and the original IEEE and
+       The Open Group Standard, the original IEEE and The Open Group  Standard
+       is  the  referee document. The original Standard can be obtained online
+       at http://www.unix.org/online.html .
+
+       Any typographical or formatting errors that appear  in  this  page  are
+       most likely to have been introduced during the conversion of the source
+       files to man page format. To report such errors,  see  https://www.ker‐
+       nel.org/doc/man-pages/reporting_bugs.html .
+
+IEEE/The Open Group                  2013                          COMMAND(1P)
